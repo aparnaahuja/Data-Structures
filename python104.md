@@ -86,7 +86,7 @@ Car: McLaren, Accessory required: Dolby sound kit
 
 + range() - This returns a list of numbers created using range() function.
 
-+ xrange() returns - xrange() object.
++ xrange() returns - xrange() object. We cannot apply slicing in xrange object
 
 + The **==** operator compares the values of both the operands and checks for value equality. Whereas **is** operator checks whether both the operands refer to the same object or not.
 
