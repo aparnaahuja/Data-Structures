@@ -88,9 +88,14 @@ we can obtain the required character of a string using syntax, **string_name[ind
         print(str.count("geeks")) // 3
         print(str.count("Geeks")) // 0
         
-- **center()**:
-- **ljust()**:
-- **rjust()**:
+- **center(length,"string/charcater")**: This function is used to surround the string with a character repeated both sides of string multiple times. Takes 2 arguments, length of string and the character.
+- **ljust(length,"string/charcater")**: This function returns the original string shifted to left that has a character at its right. It also takes two arguments, length of string and the character.
+- **rjust(length,"string/charcater")**: This function returns the original string shifted to right that has a character at its left.
+    >
+        str = "dishant"
+        print(str.center(15,'-')) // ----dishant----
+        print(str.ljust(15,'-')) // dishant--------
+        print(str.rjust(15,'-')) // --------dishant
 - **isaplha()**: This function returns true when all the characters in the string are alphabets else returns false.
 - **isalnum()**: This function returns true when all the characters in the string are combination of numbers and/or alphabets else returns false.
 - **isspace()**: This function returns true when all the characters in the string are spaces else returns false.
@@ -100,7 +105,11 @@ we can obtain the required character of a string using syntax, **string_name[ind
         print(str.isalnum()) // True
         print(str.isspace()) // False
 
-- **join()**:
+- **join()**: This function is used to join a sequence of strings mentioned in its arguments with the string.
+    >
+        str = "_"
+        str1 = ("Dishant","Sethi")
+        print(str.join(str1)) // Dishant_Sethi
 - **strip("str/character")**: This method is used to delete all the leading and trailing characters mentioned in its argument.
 - **lstrip("str/character")**: This method is used to delete all the leading characters(left side) mentioned in its argument.
 - **rstrip("str/character")**: This method is used to delete all the trailing characters(right side) mentioned in its argument.
@@ -124,3 +133,14 @@ we can obtain the required character of a string using syntax, **string_name[ind
         str2 = "nerds"
         print(str.replace(str1,str2,2))
         // nerdsfornerds if for geeks
+
+### Convert String to a List
+
+The split() method is used to split the strings and store them in the list.
+>
+    str = "Dishant Sethi"
+    li = list(str.split(" "))
+    print(li) // ['Dishant','Sethi']
+
+### Regular Expressions
+
