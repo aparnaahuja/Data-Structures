@@ -113,3 +113,20 @@ Python provides a function **issubclass()** that directly tells us if a class is
     
     d = Derived(10,20)
     d.printXY()
+
+### Lambda function with filter,map,reduce
+
+    g = lambda x: x*x*x
+    print(g(2))  // 8
+
+- Donot have to return
+- Function without name(anonymus)
+
+**filter()**: takes a function and a list as arguments.
+>
+    lst = [1,2,3,4,5,6,7,8,9,10]
+    final_lst = list(filter(lambda x:(x%2==0),lst))
+    print(final_lst)  // [2,4,6,8,10]
+
+**map()**
+**reduce()**
