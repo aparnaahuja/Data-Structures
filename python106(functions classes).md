@@ -122,11 +122,23 @@ Python provides a function **issubclass()** that directly tells us if a class is
 - Donot have to return
 - Function without name(anonymus)
 
-**filter()**: takes a function and a list as arguments.
+**filter()**: takes a function and a list as arguments. It makes a new list from the element in the list that satisfies some condition.
 >
     lst = [1,2,3,4,5,6,7,8,9,10]
     final_lst = list(filter(lambda x:(x%2==0),lst))
     print(final_lst)  // [2,4,6,8,10]
 
-**map()**
-**reduce()**
+**map()**: function takes an iterable(list, tuple, set) and applies a function to each element in the list.
+>
+    def func(num):
+	    return num * num
+    l = [1, 2, 3, 4, 5, 6]
+    ans = list(map(func, l))
+
+**reduce()**: It continuously applies a function on a list until it returns a single value.
+>
+    from functools import reduce
+    l = [1, 2, 3, 4, 5, 6]
+    ans = reduce(lambda x, y: x * y, l)  // product of all elements in the list
+
+#### map and filter return a map object whereas reduce returns a single value.    
